@@ -1,0 +1,793 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ОО/НПО «Бонувони Хатлон»</title>
+  <meta name="description" content="ОО/НПО «Бонувони Хатлон» — развитие сообществ, обучение, поддержка женщин и семей, социальные и агро-проекты." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="khatlon.css" />
+</head>
+
+<body>
+  <!-- Decorative background -->
+  <div class="bgBlobs" aria-hidden="true">
+    <span class="blob blob--a"></span>
+    <span class="blob blob--b"></span>
+    <span class="blob blob--c"></span>
+  </div>
+
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a class="brand" href="#home">
+        <img class="brand__logo" src="assets/logo.jpg" alt="Логотип" />
+        <div class="brand__text">
+          <div class="brand__name">Бонувони Хатлон</div>
+          <div class="brand__tag">НПО • Тоҷикистон</div>
+        </div>
+      </a>
+
+      <nav class="nav__links" aria-label="Навигация">
+        <a href="#about">О нас</a>
+        <a href="#projects">Проекты</a>
+        <a href="#audience">Для кого</a>
+        <a href="#testimonials">Отзывы</a>
+        <a href="#team">Руководство</a>
+        <a href="#contacts">Контакты</a>
+        
+        
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--ghost" href="mailto:bonuvonikhatlon@gmail.com">Написать</a>
+        <a class="btn btn--shine" href="#contacts">Связаться</a>
+        <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="container mobile" id="mobileMenu">
+      <a href="#about">О нас</a>
+      <a href="#projects">Проекты</a>
+      <a href="#audience">Для кого</a>
+      <a href="#team">Руководство</a>
+      <a href="#contacts">Контакты</a>
+      <div class="mobile__row">
+        <a class="btn btn--ghost" href="mailto:bonuvonikhatlon@gmail.com">Написать</a>
+        <a class="btn btn--shine" href="#contacts">Связаться</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container hero__inner reveal">
+      <div class="pill">
+        <span class="dot"></span>
+        <span>Социальные услуги • Обучение • Сельское хозяйство • Предпринимательство</span>
+      </div>
+
+      <h1>Усиливаем сообщества и поддерживаем насиление страны через знания и возможности</h1>
+
+      <p class="hero__lead">
+        Мы реализуем проекты по обучению, занятости, здравоохранению сельскому хозяйству, экологии  и развитию предпринимательства.
+      </p>
+
+      <div class="hero__cta">
+        <a class="btn btn--big btn--shine" href="#projects">Смотреть проекты</a>
+        <a class="btn btn--ghost btn--big" href="#about">Узнать о нас</a>
+      </div>
+
+      <div class="hero__stats">
+        <div class="stat">
+          <div class="stat__num">2001</div>
+          <div class="stat__lbl">год регистрации</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">75+</div>
+          <div class="stat__lbl">проектов реализовано</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num">63+</div>
+          <div class="stat__lbl">района охвачено</div>
+        </div>
+      </div>
+
+      <div class="scrollHint" aria-hidden="true">
+        <span class="scrollHint__dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" aria-label="Ключевые направления">
+    <div class="container">
+      <div class="features__grid">
+        <article class="feature reveal">
+          <div class="feature__top">
+            <span class="ico" aria-hidden="true">📚</span>
+            <h3>Обучение и навыки</h3>
+          </div>
+          <p>Тренинги, курсы и практические программы для женщин, молодёжи и специалистов.</p>
+          <a class="link" href="#projects">Смотреть проекты →</a>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__top">
+            <span class="ico" aria-hidden="true">🌱</span>
+            <h3>Агро-развитие</h3>
+          </div>
+          <p>FFS/демо-участки, цепочки добавленной стоимости, поддержка фермеров и агродилеров.</p>
+          <a class="link" href="#projects">Смотреть проекты →</a>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__top">
+            <span class="ico" aria-hidden="true">🤝</span>
+            <h3>Социальная поддержка</h3>
+          </div>
+          <p>Центры услуг и инициативы для уязвимых групп и пожилых людей.</p>
+          <a class="link" href="#projects">Смотреть проекты →</a>
+        </article>
+
+        <article class="feature reveal">
+          <div class="feature__top">
+            <span class="ico" aria-hidden="true">🚀</span>
+            <h3>Предпринимательство</h3>
+          </div>
+          <p>Стартап-программы, буткемпы, консультации и сопровождение бизнес-идей.</p>
+          <a class="link" href="#projects">Смотреть проекты →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Кто мы</h2>
+        <p>
+          ОО/НПО «Бонувони Хатлон» — общественная организация, работающая в Хатлонской области, Согдийской области и РРП.
+          Мы внедряем практические решения на местах и развиваем потенциал сообществ.
+        </p>
+      </div>
+
+      <div class="cards">
+        <div class="card reveal">
+          <h3>Миссия</h3>
+          <p>Поддержка людей и сообществ через образование, занятость и устойчивое развитие.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Подход</h3>
+          <p>Обучение, мобилизация, демонстрации, коммуникационные кампании, мониторинг и оценка.</p>
+        </div>
+        <div class="card reveal">
+          <h3>Фокус</h3>
+          <p>Женщины, молодёжь, фермеры, уязвимые группы, местные лидеры и сообщества.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section--alt" id="projects">
+    <div class="container">
+      <div class="section__head section__head--row reveal">
+        <div>
+          <h2>Проекты</h2>
+          <p>Слайды с кратким описанием. </p>
+        </div>
+
+        <div class="sliderBtns">
+          <button class="iconBtn" id="pPrev" aria-label="Назад">←</button>
+          <button class="iconBtn" id="pNext" aria-label="Вперёд">→</button>
+        </div>
+      </div>
+
+      <div class="projectSlider reveal" id="pSlider">
+        <div class="projectTrack" id="pTrack">
+          <article class="projectSlide">
+            <div class="projectMedia">
+              <div class="ph">
+                <img src="assets/bobo3.jpg" alt=""style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/bobo1.jpg" alt=""style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/bobo2.jpg" alt=""style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/bobo4.jpg" alt=""style="width: 400px; height: 300px; object-fit: cover;">
+              </div>
+            </div>
+            <div class="projectBody">
+              <div class="chips">
+                <span class="chip">Социальные услуги</span>
+                <span class="chip chip--soft">Бохтар • 2025-2026</span>
+              </div>
+              <h3>Социальная поддержка уязвимых групп населения</h3>
+                
+
+                
+
+                <ul class="mini">
+                  <h3>Центр социальных услуг для пожилых людей (2025)</h3>
+                  <br>
+                  <p>
+                <strong>Основные предоставляемые услуги для 50 пожилых людей:</strong>
+                </p>
+                <li>Создание Центра социальных услуг для пожилых людей (дневное пребывание)</li>
+                <li>Регистрация и направление 50 пожилого человека из уязвимых групп в центр</li>
+                <li>Юридические и психологические консультации для 50 человек и членов их семей</li>
+                <li>4 культурно-просветительских мероприятия</li>
+                <li>Бытовые, психологические, юридические и материальные услуги для пожилых жителей</li>
+                <br>
+                  <h3>Центр социальных услуг для малоимущих семей и пожилых людей (2026)</h3>
+                  <p>
+                <strong>Услуги центра:</strong> Центр оказывает социальные услуги для членов 200 малоимущих семей и 50 пожилых людей г. Бохтар.
+                </p>
+                <li>Юридические и психологические консультации </li>
+                <li>Оказание первой помощи и социальная работа на дому</li>
+                <li>Направление на профессиональные обучающие курсы</li>
+                <li>Содействие в разработке бизнес-планов для получения грантов и кредитов</li>
+                <li>Помощь в поиске работы для бенефициаров</li>
+                <li>Социальная и материальная поддержка</li>
+                <li>Культурные и оздоровительные услуги</li>
+                <li>Информационные встречи, тренинги и культурные мероприятия</li>
+                
+
+                </ul>
+              <ul class="mini">
+                <li><b>Формат:</b> центр/сервис</li>
+                <li><b>Фокус:</b> пожилые и члены уязвимых семей</li>
+              </ul>
+              <a class="btn btn--small btn--shine" href="#contacts">Узнать подробнее</a>
+            </div>
+          </article>
+
+          <article class="projectSlide">
+            <div class="projectMedia">
+              <div class="ph">
+                <img src="assets/sel2.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/sel1.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+                
+                <img src="assets/sel3.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/sel4.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+              </div>
+            </div>
+            <div class="projectBody">
+              <div class="chips">
+                <span class="chip">Сельское хозяйство</span>
+                <span class="chip chip--soft">2024–2025</span>
+              </div>
+              <h3>Сельское хозяйство и управления земельными ресурсами в Таджикистане» 
+В рамках программы «Продовольствие во имя будущего
+</h3>
+              <p>
+                <strong>Мобилизация и охват:</strong> 8 676 производителей (женщины, молодёжь, фермеры) участвуют в проекте; создано 90 фермерских групп.
+              </p>
+
+              <p>
+                <strong>Информационные материалы:</strong> Разработано 41 500 буклетов, листовок и брошюр; установлено 100 информационных баннеров; создан видеоролик о проекте.
+              </p>
+
+              <p>
+                <strong>Обучение:</strong> Более 150 встреч и тренингов; обучено 200 консультантов для фермеров; каждый участник прошёл 2–3 практических тренинга на полях.
+              </p>
+
+              <p>
+                <strong>Демо-участки:</strong> Создано 90 опытных участков с новыми экологичными методами выращивания; для каждого участка определено место и координаты.
+              </p>
+
+              <p>
+                <strong>Цифровые инструменты:</strong> Введена информационная система у поставщиков; создана сеть WhatsApp-групп для быстрого обмена советами и информацией.
+              </p>
+
+              <p>
+                <strong>Связи с рынком:</strong> Организованы встречи производителей с покупателями и экспортёрами; заключено 250 сделок между фермерами и торговцами.
+              </p>
+
+              <p>
+                <strong>Партнёры:</strong> В проекте участвуют 16 специалистов организации и 35 экспертов из частного сектора.
+              </p>
+              <ul class="mini">
+                <li><b>Инструменты:</b> полевые школы для фермеров (FFS), полевые дни для фермров (FFD) / демо-участки</li>
+                <li><b>Результат:</b> применение инновационных технологий и методов при производтсве сельскохозяйственной продукции/Развитие игроков цепочек добавленной стоимости</li>
+              </ul>
+              <a class="btn btn--small btn--ghost" href="#contacts">Партнёрство</a>
+            </div>
+          </article>
+
+          <article class="projectSlide">
+            <div class="projectMedia">
+              <div class="ph">
+                <span>Фото проекта</span>
+               <img src="assets/kurs1.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/kurs2.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/kurs3.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/kurs4.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+              </div>
+            </div>
+            <div class="projectBody">
+              <div class="chips">
+                <span class="chip">Профобучение</span>
+                <span class="chip chip--soft">2018–2021</span>
+              </div>
+              <h3>Рыночное инклюзивное профессиональное обучение MRITP/TVET</h3>
+              <p><strong>Информационно-коммуникационная кампания:</strong> Разработано более 30 видов ИК-материалов (буклеты, лифлеты, брошюры, баннеры, календари, учебные программы); издано и распространено свыше 56 000 экземпляров; создан видеоролик о профкурсах.</p>
+
+              <p><strong>Мобилизация и охват:</strong> Проведено более 400 встреч с участием 6 000+ активистов; мобилизовано и отобрано 5 391 бенефициар из уязвимых групп (женщины, молодёжь, люди с инвалидностью, трудовые мигранты).</p>
+
+              <p><strong>Исследование рынка труда:</strong> Проведены социологические исследования и анализ спроса на профессии для содействия трудоустройству выпускников.</p>
+
+              <p><strong>Профессиональное обучение:</strong> Обучено 5 391 человека по 81 программе: 840 по 20 профессиям с навыками предпринимательства; 2 650 мигрантов и молодёжи по 39 аккредитованным курсам; 1 901 женщина по 22 профессиям для МСБ.</p>
+
+              <p><strong>Трудоустройство и бизнес:</strong> 3 777 выпускников (70%) трудоустроены в Таджикистане и за рубежом (Россия, Польша, Турция); поддержаны 24 бизнес-плана с грантами и стартовым финансированием.</p>
+
+              <p><strong>Партнёрство:</strong> Активизировано сотрудничество с органами власти, СМИ, центрами занятости и местными сообществами.</p>
+
+              <p><strong>COVID-19:</strong> Распространено 6 000+ информационных материалов; передано 10 000+ средств защиты 5 400 бенефициарам.</p>
+
+              <p><strong>Команда:</strong> 75 специалистов обеспечили управление, обучение и сопровождение бенефициаров.</p>
+              <ul class="mini">
+                <li><b>Фокус:</b> молодёжь / женщины</li>
+                <li><b>Цель:</b> навыки + трудоустройство</li>
+              </ul>
+              <a class="btn btn--small btn--shine" href="#contacts">Связаться</a>
+            </div>
+          </article>
+
+          <article class="projectSlide">
+            <div class="projectMedia">
+              <div class="ph">
+                <img src="assets/tren1.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/tren2.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/tren3.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+                <img src="assets/tren4.jpg" alt="" style="width: 400px; height: 300px; object-fit: cover;">
+              </div>
+            </div>
+            <div class="projectBody">
+              <div class="chips">
+                <span class="chip">Предпринимательство</span>
+                <span class="chip chip--soft">2021</span>
+              </div>
+              <h3>Проект по благоустройству автодороги Душанбе-Узбекистан. 
+                <br>
+                Министерство транспорта Республики Таджикистан, 
+
+Грант и кредит АБРР
+(ADB) 
+</h3>
+
+              <p>
+                <strong>Исследование и мобилизация:</strong> Проведены опрос и анкетирование 102 бенефициаров проекта для анализа развития бизнеса и определения уровня знаний.
+              </p>
+
+              <p>
+                <strong>Организация групп обучения:</strong> Создано 7 групп по 15–20 человек для проведения тренингов.
+              </p>
+
+              <p>
+                <strong>Обучение налогообложению и праву:</strong> Проведено 7 трёхдневных тренингов по налогообложению и праву для предпринимателей малого и среднего бизнеса.
+              </p>
+
+              <p>
+                <strong>Обучение бухгалтерскому учёту и развитию бизнеса:</strong> Проведено 7 четырёхдневных курсов по бухгалтерскому учёту, развитию бизнеса и туристическим услугам.
+              </p>
+
+              <p>
+                <strong>Консультирование и поддержка:</strong> Оказано консультирование 102 бенефициарам в разработке бизнес-планов для получения субгрантов (3 000–20 000 USD).
+              </p>
+
+              <p>
+                <strong>Финансовая поддержка:</strong> 80 бенефициаров получили финансирование для реализации бизнес-планов.
+              </p>
+
+              <p>
+                <strong>Команда проекта:</strong> 9 специалистов (менеджер, координатор, финансист, 2 мобилизатора/фасилитатора, 3 тренера ТГУ, 1 бизнес-консультант налоговой инспекции).
+              </p>
+              <ul class="mini">
+                <li><b>Бинефецары проекта:</b> Предприниматели малого и среднего бизнеса, предприятия, точки продажи горюче-смазочных материалов, автосервисы, гостиницы и др., которые были расположены вдоль дороги проекта</li>
+                
+              </ul>
+              <a class="btn btn--small btn--ghost" href="#contacts">Узнать</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="dots" id="pDots" aria-label="Навигация по слайдам"></div>
+      </div>
+    </div>
+  </section>
+<!-- TESTIMONIALS -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section__head section__head--row reveal">
+      <div>
+        <h2>Отзывы партнёров и доноров</h2>
+        <p>Короткие отзывы о сотрудничестве. Логотипы и фото можешь добавить позже.</p>
+      </div>
+
+      <div class="sliderBtns">
+        <button class="iconBtn iconBtn--dark" id="tPrev" aria-label="Назад">←</button>
+        <button class="iconBtn iconBtn--dark" id="tNext" aria-label="Вперёд">→</button>
+      </div>
+    </div>
+
+    <div class="tSlider reveal" id="tSlider">
+      <div class="tTrack" id="tTrack">
+
+        <!-- Slide 1 -->
+        <article class="tSlide">
+          <div class="tCard">
+            <div class="tTop">
+              <div class="tLogo phLogo" aria-hidden="true">
+                <img src="assets/logo1.jpg" alt="" style="width: 60px; height: 60px; object-fit: contain;">
+              </div>
+              <div class="tMeta">
+                <div class="tOrg">NIRAS / Партнёр</div>
+                <div class="tRole">Партнёр • Заказчик</div>
+              </div>
+              <div class="tStars" aria-label="Рейтинг 5 из 5">
+                ★★★★★
+              </div>
+            </div>
+
+            <blockquote class="tQuote">
+              NIRAS has been partnering with NGO Bonuvoni Khatlon between 2016 and 2018 on improving
+access to agriculture extension services within the Agriculture Commetcialization Project.Bonuvoni Khatlon was very strong in terms of managing the Farmer Filed School approach as
+well as selecting best local master trainers. Most of the trainers have successfully graduated the
+FFS and now continue providing their services to local farmers. Throughout the project, Bonuvoni
+Khatlon conducted 500 trainings covering 2,500 farmers.
+
+            </blockquote>
+
+            <div class="tBottom">
+              <div class="tPerson">
+                <div class="tAvatar phAvatar" aria-hidden="true"><img src="assets/cantact1.jpg" alt="" style="width: 60px; height: 60px; object-fit: contain; border-radius: 50%;"></div>
+                
+                <div>
+                  <div class="tName">Naira Zevarsheva</div>
+                  <div class="tPos">Заместитель директора</div>
+                </div>
+              </div>
+
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article class="tSlide">
+          <div class="tCard">
+            <div class="tTop">
+              <div class="tLogo phLogo" aria-hidden="true"><img src="assets/logo2.jpg" alt="" style="width: 60px; height: 60px; object-fit: contain;"></div>
+              <div class="tMeta">
+                <div class="tOrg">DAI</div>
+                <div class="tRole">Донор • Программа</div>
+              </div>
+              <div class="tStars" aria-label="Рейтинг 5 из 5">★★★★★</div>
+            </div>
+
+            <blockquote class="tQuote">
+              During the implementation PO "Bonuvoni Khatlon" under Task Order #1 facilitated training for 1,416 (214 women, 1,202 men) members of 22 early watermelon FFS groups and for 359 members (77 women, 282 men) of nine grape producer FFS groups. Under Task Order #2 PO "Bonivoni Khatlon" facilitated approximately 3,750 unique farmers for selected four value chain products and under Task Order #3 facilitated one FFD session, which was conducted by Input Suppliers AgroOlam and Neksigol, where trained approximately 3,510 unique farmers: Stone Fruit (Apricots+) Value Chain 360 farmers, Grape Value Chain 270 farmers, Melon Value Chain 1080 farmers, and Early Vegetable Value Chain - 1,800 farmers.
+            </blockquote>
+
+            <div class="tBottom">
+              <div class="tPerson">
+                <div class="tAvatar phAvatar" aria-hidden="true"><img src="assets/cantact1.jpg" alt="" style="width: 60px; height: 60px; object-fit: contain; border-radius: 50%;"></div>
+                <div>
+                  <div class="tName">Barbara Yale</div>
+                  <div class="tPos">Руководитель проекта</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article class="tSlide">
+          <div class="tCard">
+            <div class="tTop">
+              <div class="tLogo phLogo" aria-hidden="true"><img src="assets/logo3.jpg" alt="" style="width: 60px; height: 60px; object-fit: contain; border-radius: 25%;"></div>
+              <div class="tMeta">
+                <div class="tOrg">Вазорати меҳнат, муҳоҷират ва шуғли аҳолии Ҷумҳурии Тоҷикистон</div>
+                <div class="tRole">Заказчик • Партёр</div>
+              </div>
+              <div class="tStars" aria-label="Рейтинг 5 из 5">★★★★★</div>
+            </div>
+
+            <blockquote class="tQuote">
+              I hereby confirm that the Public Organization "Bonuvoni Khatlon> is our partner in the
+framework of the implementation of the Market-Responsive lnclusive Training program of the
+"Strengthening Technical and Vocational Education and Training" Project of tne lVtinistry of
+Labor, Migration and Employment of the Republic of Tajikistan, funded by the Asian
+Development Bank and the Govemment of the Republic of rajikistan.
+The organization successfully manages the grant portfolio of USD396 ,210.0 allocated for the
+targeted Khatlon region. The total number of beneflciaries is 5 391 which includes vulnerable
+people, disabled group of people, female and youth as well as returning migrants. These
+beneficiaries are supposed to be trained on shortterm courses, business skills courses and
+validated. The main objective and focus is to promote provision of jobs for the trained
+beneflciaries.
+
+            </blockquote>
+
+            <div class="tBottom">
+              <div class="tPerson">
+                <div class="tAvatar phAvatar" aria-hidden="true"><img src="assets/cantact1.jpg" alt="" style="width: 60px; height: 60px; object-fit: contain; border-radius: 50%;"></div>
+                <div>
+                  <div class="tName">Nabisher Djuraev</div>
+                  <div class="tPos">Национальный координатор проекта</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="tDots" id="tDots" aria-label="Навигация по отзывам"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- TABS -->
+  <section class="section" id="audience">
+    <div class="container">
+      <div class="section__head center reveal">
+        <h2>Кому мы помогаем</h2>
+        
+      </div>
+
+      <div class="tabs reveal">
+        <div class="tabBtns" role="tablist" aria-label="Вкладки">
+          <button class="tabBtn active" role="tab" aria-selected="true" data-tab="women">Женщины</button>
+          <button class="tabBtn" role="tab" aria-selected="false" data-tab="youth">Молодёжь</button>
+          <button class="tabBtn" role="tab" aria-selected="false" data-tab="farmers">Фермеры</button>
+          <button class="tabBtn" role="tab" aria-selected="false" data-tab="vulnerable">Уязвимые слои населения</button>
+        </div>
+
+        <div class="tabPanel">
+          <div class="tabContent show" id="women">
+            <div class="tabGrid">
+              <div class="tabImg">
+                <div class="ph ph--tall">
+                  <img src="assets/women.jpg" alt="" style="width: 600px; height: 500px; object-fit: cover;">
+                </div>
+              </div>
+              <div class="tabText">
+                <div class="chips chips--light">
+                  <span class="chip chip--light">Лидерство</span>
+                  <span class="chip chip--light2">Обучение</span>
+                  <span class="chip chip--light2">Занятость</span>
+                </div>
+                <h3>Поддержка женщин и развитие потенциала</h3>
+                <p>Инструменты для роста самостоятельности, доходов и участия в принятии решений на местах.</p>
+                <div class="tabActions">
+                  <a class="btn btn--small btn--shine" href="#contacts">Связаться</a>
+                  <a class="btn btn--small btn--ghost" href="#projects">Проекты</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabContent" id="youth">
+            <div class="tabGrid">
+              <div class="tabImg">
+                <div class="ph ph--tall">
+                  <img src="assets/youth.jpg" alt="" style="width: 600px; height: 500px; object-fit: cover;">
+                </div>
+              </div>
+              <div class="tabText">
+                <div class="chips chips--light">
+                  <span class="chip chip--light">Навыки</span>
+                  <span class="chip chip--light2">Карьера</span>
+                  <span class="chip chip--light2">Стартапы</span>
+                </div>
+                <h3>Молодёжь: навыки, карьера, предпринимательство</h3>
+                <p>Профориентация, обучение и сопровождение инициатив — для работы или старта своего дела.</p>
+                <div class="tabActions">
+                  <a class="btn btn--small btn--shine" href="#contacts">Связаться</a>
+                  <a class="btn btn--small btn--ghost" href="#projects">Проекты</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabContent" id="farmers">
+            <div class="tabGrid">
+              <div class="tabImg">
+                <div class="ph ph--tall">
+                    <img src="assets/farmers.jpg" alt="" style="width: 600px; height: 500px; object-fit: cover;">
+                </div>
+              </div>
+              <div class="tabText">
+                <div class="chips chips--light">
+                  <span class="chip chip--light">FFS</span>
+                  <span class="chip chip--light2">VC</span>
+                  <span class="chip chip--light2">Демо</span>
+                </div>
+                <h3>Фермеры: практики и повышение доходов</h3>
+                <p>Полевые школы и демонстрации, чтобы повышать урожайность, качество и устойчивость хозяйств.</p>
+                <div class="tabActions">
+                  <a class="btn btn--small btn--shine" href="#contacts">Связаться</a>
+                  <a class="btn btn--small btn--ghost" href="#projects">Проекты</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tabContent" id="vulnerable">
+            <div class="tabGrid">
+              <div class="tabImg">
+                <div class="ph ph--tall">
+                  <img src="assets/vulnerable.JPG" alt="" style="width: 600px; height: 500px; object-fit: cover;">
+                </div>
+              </div>
+              <div class="tabText">
+                <div class="chips chips--light">
+                  <span class="chip chip--light">Соц.услуги</span>
+                  <span class="chip chip--light2">Сопровождение</span>
+                  <span class="chip chip--light2">Консультации</span>
+                </div>
+                <h3>Уязвимые группы: поддержка и доступ к помощи</h3>
+                <p>Консультации и сопровождение для улучшения качества жизни и доступа к сервисам.</p>
+                <div class="tabActions">
+                  <a class="btn btn--small btn--shine" href="#contacts">Связаться</a>
+                  <a class="btn btn--small btn--ghost" href="#projects">Проекты</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section section--alt" id="team">
+    <div class="container">
+      <div class="section__head section__head--row reveal">
+        <div>
+          <h2>Руководство</h2>
+        </div>
+        <a class="btn btn--ghost" href="mailto:bonuvonikhatlon@gmail.com">Написать</a>
+      </div>
+
+      <div class="team reveal">
+        <img class="realImg realImg--square" src="assets/director.jpg" alt="Фото руководителя">
+
+
+        <div class="team__card">
+          <div class="team__top">
+            <div>
+              <h3 class="team__name">Гулбахор Максудходжаева</h3>
+              <div class="team__role">Руководитель ОО/НПО «Бонувони Хатлон»</div>
+            </div>
+            <span class="badge">Контактное лицо</span>
+          </div>
+
+          <div class="team__grid">
+            <div class="info">
+              <div class="info__lbl">Телефон</div>
+              <div class="info__val">
+                <a href="tel:+992918738267">+992 918 73 82 67</a><br>
+                <a href="tel:+992900901009">+992 900 90 10 09</a>
+              </div>
+            </div>
+            <div class="info">
+              <div class="info__lbl">Email</div>
+              <div class="info__val">
+                <a href="mailto:bonuvonikhatlon@gmail.com">bonuvonikhatlon@gmail.com</a>
+              </div>
+            </div>
+          </div>
+
+        <div class="note"></div>
+            <div><strong>Дата рождения:</strong> 18.03.1972</div>
+            <div><strong>Гражданство:</strong> Таджичка</div>
+            <div><strong>Семейное положение:</strong> Замужем</div>
+        </div>
+
+          <div class="team__actions">
+            <a class="btn btn--small btn--shine" href="#contacts">Связаться</a>
+            <a class="btn btn--small btn--ghost" href="#projects">Проекты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="section" id="contacts">
+    <div class="container">
+      <div class="section__head reveal">
+        <h2>Контакты</h2>
+        <p>Напишите нам — обсудим сотрудничество и проекты.</p>
+      </div>
+
+      <div class="contact">
+        <div class="contact__card reveal">
+          <h3>Связаться быстро</h3>
+          <div class="contact__row">
+            <span class="label">Email</span>
+            <a class="value" href="mailto:bonuvonikhatlon@gmail.com">bonuvonikhatlon@gmail.com</a>
+          </div>
+          <div class="contact__row">
+            <span class="label">Телефон</span>
+            <a class="value" href="tel:+992918738267">+992 918 73 82 67</a>
+          </div>
+          <div class="contact__row">
+            <span class="label">Телефон</span>
+            <a class="value" href="tel:+992900901009">+992 900 90 10 09</a>
+          </div>
+
+          <div class="contact__actions">
+            <a class="btn btn--small btn--shine" href="mailto:bonuvonikhatlon@gmail.com">Написать</a>
+            <a class="btn btn--small btn--ghost" href="#projects">Проекты</a>
+          </div>
+        </div>
+
+        <div class="contact__card reveal">
+          <h3>Адрес</h3>
+          <p><b>Хатлонская область, г. Бохтар</b><br>Пр. Вахдат 148 «б»</p>
+          <p class="muted">Также офис в г. Душанбе (мкр. Зарафшон, ул. Б. Хамдам 26/1).</p>
+
+          <div class="mapSlider" id="mapSlider">
+  <div class="mapTrack" id="mapTrack">
+
+    <!-- Карта 1 -->
+    <div class="mapSlide">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.852938802995!2d68.76638135114246!3d37.840328536339086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ca1b25865ca463%3A0xee123b7eae3c33cc!2z0LEsINC_0YDQvtGB0L8uINCS0LDRhdC00LDRgiAxNDgsINCa0YPRgNCz0LDQvS3QotGO0LHQtSwg0KLQsNC00LbQuNC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2s!4v1770846088022!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        loading="lazy"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Карта 2 -->
+    <div class="mapSlide">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49931.99991809934!2d68.70349434061424!3d38.5395307873949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5db3e756bf4b9%3A0x2140eb8f0950d160!2z0JzQsNCz0LDQt9C40L0gIkJvQm8gSEFNREFNIg!5e0!3m2!1sru!2s!4v1770845925641!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        loading="lazy"
+        allowfullscreen=""
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+
+  <div class="mapControls">
+    <button id="mapPrev">←</button>
+    <button id="mapNext">→</button>
+  </div>
+
+  <div class="mapDots" id="mapDots"></div>
+</div>
+
+        </div>
+      </div>
+
+      <footer class="footer reveal">
+        <div>© <span id="year"></span> • Бонувони Хатлон</div>
+        <div class="footer__links">
+          <a href="#about">О нас</a>
+          <a href="#projects">Проекты</a>
+          <a href="#contacts">Контакты</a>
+        </div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
